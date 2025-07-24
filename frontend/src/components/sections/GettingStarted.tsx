@@ -13,7 +13,7 @@ export default function GettingStarted() {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Water quality monitoring has never been this intuitive. In just
-            three steps, you'll have real-time insights that protect what
+            three steps, you&apos;ll have real-time insights that protect what
             matters most.
           </p>
         </div>
