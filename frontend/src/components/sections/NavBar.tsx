@@ -10,7 +10,7 @@ export function NavBar() {
 
   return (
     <>
-      <header className="fixed left-1/2 -translate-x-1/2 w-full z-50 px-4 lg:px-6 h-16 bg-black/80 backdrop-blur">
+      <header className="fixed left-1/2 -translate-x-1/2 w-full z-50 px-4 lg:px-6 h-16 bg-black/5 backdrop-blur">
         <div className="flex items-center justify-between h-full">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
@@ -58,7 +58,7 @@ export function NavBar() {
             </Button>
           </nav>
 
-          {/* Mobile Menu  */}
+          {/* Mobile Navigation  */}
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -74,7 +74,7 @@ export function NavBar() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm md:hidden">
+        <div className="fixed inset-0 z-40 bg-black/5 backdrop-blur-sm md:hidden">
           <div className="fixed top-16 left-0 right-0 bg-black/90 backdrop-blur border-t border-gray-800">
             <nav className="flex flex-col p-4 space-y-4">
               <Link
