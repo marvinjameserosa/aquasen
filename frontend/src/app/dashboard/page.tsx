@@ -921,9 +921,8 @@ export default function WaterMonitoringDashboard() {
       },
     });
   };
-
   const removeParameter = (paramName: string) => {
-    const { [paramName]: removed, ...rest } = newStation.parameters;
+    const { [paramName]: _, ...rest } = newStation.parameters;
     setNewStation({
       ...newStation,
       parameters: rest,
