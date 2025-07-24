@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { motion, Variants } from "framer-motion";
@@ -71,12 +72,14 @@ export function Hero() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-lg px-8 py-3 hover:scale-105 transition-transform"
-          >
-            Get Started
-          </Button>
+          <Link href="/dashboard">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-lg px-8 py-3 hover:scale-105 transition-transform"
+            >
+              Get Started
+            </Button>
+          </Link>
           <Button
             size="lg"
             variant="outline"

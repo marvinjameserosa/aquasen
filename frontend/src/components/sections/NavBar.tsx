@@ -53,9 +53,11 @@ export function NavBar() {
             >
               Login
             </Link>
-            <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
-              Get Started
-            </Button>
+            <Link href="/dashboard">
+              <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
+                Get Started
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Navigation  */}
